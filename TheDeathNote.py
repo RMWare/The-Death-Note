@@ -1,0 +1,57 @@
+import time
+from PIL import Image
+
+#Start of Program
+print("--------------------")
+print("--------------------")
+print("---The Death Note---")
+print("--------------------")
+print("--------------------")
+print("--------------------")
+print("--------------------")
+print("--------------------")
+time.sleep(5)
+print("\nShall we begin? :) ")
+ch1 = str(input("\nEnter 'y' for Yes and 'n' for No:"))
+
+#Main Program
+if ch1 in ['y','Y','yes','Yes','YES']:
+    name=input("\nPlease Enter Your First Name:")
+    print("--------------------")
+    print("---The Death Note---")
+    print("--------------------")
+    print("--------------------")
+    print("-----",name,"-----")
+    print("--------------------")
+    print("--------------------")
+    print("--------------------")
+    time.sleep(5)
+    victim=input("\nPlease Enter The Victim's Full Name:")
+    time.sleep(11)
+    print("Thank You.")
+    time.sleep(6)
+    print(victim,"has been written in to the book")
+    time.sleep(4)
+    print("\nPlease Wait...")
+    time.sleep(9)
+    img = Image.open('ryuk.jpg')
+    img.show()
+    time.sleep(5)
+    print("The Deed is complete.")
+    time.sleep(3)
+    print("Exiting Book.")
+    time.sleep(1)
+    quit()
+
+#Exit
+if ch1 in ['n','N','no','No','NO']:
+    quitter=input("\nPlease Enter Your First Name:")
+    time.sleep(2)
+    print(quitter,"has been entered into the book.")
+    time.sleep(5)
+    img = Image.open('ryuk.jpg')
+    img.show()
+    time.sleep(4)
+    print("Exiting Book.")
+    time.sleep(2)
+    quit()
